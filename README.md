@@ -10,7 +10,7 @@ _HOW_: You can build the image and use it as is by modifying the supplied `proft
 
 ## Run
 
-`docker run --rm --name proftpd -p 21:21 -p 60000:60009 -v $(pwd)/ftp-data:/srv/ftpusers ipetepete/proftpd`
+`docker run --rm --name proftpd -p 21:21 -p 60000:60009 -v $(pwd)/ftp-data:/srv/ftpusers  ipetepete/docker-proftpd`
 
 Tack on the `-d` option to run as a daemon. You can mount your own config file in `/etc/proftpd.conf` and add another volume for the anonymous' directories with `-v $(pwd)/anon-data:/srv/ftp`
 
