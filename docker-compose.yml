@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ftpd:
+    build: .
+    ports:
+      - "21:21"
+      - "60000-60009"
+    volumes:
+      # Setup a local config to override the defaults in the image
+      - ./local-proftpd.conf:/etc/proftpd.conf
+      # Adjust mounts as needed
+      - ./ftp-data:/home/ftpusers
+      - ./anon-data:/srv/ftp
