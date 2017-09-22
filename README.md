@@ -1,6 +1,6 @@
 ## Dockerized ProFTP with LDAP config*
 
-* *LDAP not included*
+* *LDAP not included* (use my ldap container which includes this ftp image: [docker-ldap](https://github.com/ipetepete/docker-ldap))
 
 **Why**: Using LDAP as an authentication backend is pretty nifty, but a royal PITA to setup. I struggled getting the right options to get this thing to work. This is the working setup.
 
